@@ -12,9 +12,7 @@ module.exports = {
 
     res.status(200).send(randomCompliment);
   },
-};
 
-module.exports = {
   getFortune: (req, res) => {
     const fortunes = [
       "All will go well with your new project",
@@ -28,5 +26,15 @@ module.exports = {
     let randomFortune = fortunes[fortuneIndex];
 
     res.status(200).send(randomFortune);
+  },
+  postGoal: (req, res) => {
+    const { goalsValue } = req.body;
+    goalsValue.push(goalsValue);
+    if (goalsValue) {
+      goals.push(goalsValue);
+      res.status(200).send(goalsValue);
+      return;
+    }
+    res.status(400).send("No goal was submitted");
   },
 };
