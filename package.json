@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "epxress": "^0.0.1-security"
+    "express": "^0.0.1-security"
   }
 }
